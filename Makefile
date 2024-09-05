@@ -1,6 +1,6 @@
 ASM = nasm
 LD = ld
-ASM_FLAGS = -f elf32 -ggdb -F dwarf    # Assembly flags: elf32 format with DWARF debugging info
+ASM_FLAGS = -I src -f elf32 -ggdb -F dwarf    # Assembly flags: elf32 format with DWARF debugging info
 LD_FLAGS = -m elf_i386
 
 SRC_DIR = src
