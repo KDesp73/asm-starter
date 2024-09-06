@@ -8,7 +8,7 @@ section .text
     global _start
 
 _start:
-    ; Write "Hello, World!" to stdout
+    ; Write "Hello World" to stdout
     mov eax, 4            ; syscall number for sys_write (0x4)
     mov ebx, 1            ; file descriptor 1 is stdout
     mov ecx, hello        ; pointer to the message
