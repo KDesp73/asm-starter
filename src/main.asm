@@ -1,13 +1,13 @@
-; helloworld.asm
+; main.asm
 
 section .data
     hello db "Hello World", 13, 10, 0  ; Null-terminated string
     hello_len equ $ - hello
 
 section .text
-    global _start
+    global main
 
-_start:
+main:
     ; Write "Hello, World!" to stdout
     mov eax, 4            ; syscall number for sys_write (0x4)
     mov ebx, 1            ; file descriptor 1 is stdout
