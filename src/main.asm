@@ -1,7 +1,7 @@
 ; main.asm
 
 section .data
-    hello db "Hello World", 13, 10, 0  ; Null-terminated string
+    hello db "Hello World", 10, 0  ; Null-terminated string
     hello_len equ $ - hello
 
 section .text
